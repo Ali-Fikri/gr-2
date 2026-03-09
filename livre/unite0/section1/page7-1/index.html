@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="de-DE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lektion 1 - Sich vorstellen</title>
+    <link rel="stylesheet" href="../../../../master.css" />
+    <link rel="stylesheet" href="../../../../styles/drag.css" />
+    <link rel="stylesheet" href="../../../../styles/dialoguo.css" />
+    <style>
+      .row {
+        background: url(./imgs/background.png) no-repeat center center;
+        background-size: cover;
+        position: relative;
+      }
+
+      .dots {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.2rem;
+
+        &.box-1 {
+          top: 20%;
+          left: 65%;
+        }
+        &.box-2 {
+          top: 27%;
+          left: 30%;
+        }
+        &.box-3 {
+          top: 15%;
+          left: 63%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="board">
+        <div class="section-title animate-characters">
+          <h2>Ergänze den Dialog:</h2>
+        </div>
+        <div class="choices" style="color: darkred">
+          (
+          <span class="choice" draggable="true" answer="Sie ist">Sie ist</span>
+          -
+          <span class="choice" draggable="true" answer="Mein Name ist"
+            >Mein Name ist</span
+          >
+          -
+          <span class="choice" draggable="true" answer="Wer ist er?"
+            >Wer ist er?</span
+          >
+
+          )
+        </div>
+
+        <div class="row">
+          <img
+            src="./imgs/1-1.png"
+            alt="Foreground"
+            class="absolute"
+            id="img-1-2" />
+          <img
+            src="./imgs/1-2.png"
+            alt="Foreground"
+            class="absolute"
+            id="img-1-3" />
+          <span class="dots box-1" answer="Mein Name ist">.........</span>
+        </div>
+
+        <div class="row">
+          <img
+            src="./imgs/2-1.png"
+            alt="Foreground"
+            class="absolute"
+            id="img-2-2" />
+          <img
+            src="./imgs/2-2.png"
+            alt="Foreground"
+            class="absolute"
+            id="img-2-3" />
+          <span class="dots box-2" answer="Wer ist er?">.........</span>
+        </div>
+        <div class="row">
+          <img
+            src="./imgs/3-1.png"
+            alt="Foreground"
+            class="absolute"
+            id="img-2-2" />
+          <img
+            src="./imgs/3-2.png"
+            alt="Foreground"
+            class="absolute"
+            id="img-2-3" />
+          <span class="dots box-3" answer="Sie ist">.........</span>
+        </div>
+      </div>
+    </div>
+
+    <audio
+      id="clapSound"
+      src="../../../../sounds/clap.mp3"
+      preload="auto"></audio>
+    <audio
+      id="inCorrectSound"
+      src="../../../../sounds/incorrect.mp3"
+      preload="auto"></audio>
+
+    <footer>
+      <div class="navigation">
+        <a href="../page7/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../../imgs/previous.png" alt="Previous" />
+          </div>
+        </a>
+
+        <a href="../../../../index.html" class="home-btn">
+          <img src="../../../../imgs/home.png" width="130" alt="Home" />
+        </a>
+
+        <a href="../page8/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../../imgs/next.png" alt="next" />
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <script src="../../../../master.js"></script>
+    <script src="../../../../scripts/dragQuestion.js"></script>
+  </body>
+</html>
