@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="de-DE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lektion 1 - Sich vorstellen</title>
+    <link rel="stylesheet" href="../../../../styles/yesOrNo.css" />
+    <link rel="stylesheet" href="../../../../master.css" />
+  </head>
+  <body>
+    <div class="page">
+      <section class="board">
+        <div class="content">
+          <div class="question-container">
+            <div
+              class="section-title"
+              data-type="file"
+              data-audio="./sounds/title.mp3">
+              <h2 class="animate-characters">Ja (√) oder Nein (X)</h2>
+            </div>
+            <div class="activity">
+              <div class="question" data-correct="true">
+                <p>1. Ich <img src="./imgs/1.png" alt="photo" /></p>
+
+                <div class="choices">
+                  <button class="choice" data-answer="true">✔️</button>
+                  <button class="choice" data-answer="false">❌</button>
+                </div>
+              </div>
+              <div class="question" data-correct="true">
+                <p>2. du <img src="./imgs/2.png" alt="photo" /></p>
+
+                <div class="choices">
+                  <button class="choice" data-answer="true">✔️</button>
+                  <button class="choice" data-answer="false">❌</button>
+                </div>
+              </div>
+              <div class="question" data-correct="true">
+                <p>3. er <img src="./imgs/3.png" alt="photo" /></p>
+
+                <div class="choices">
+                  <button class="choice" data-answer="true">✔️</button>
+                  <button class="choice" data-answer="false">❌</button>
+                </div>
+              </div>
+              <div class="question" data-correct="true">
+                <p>4. sie <img src="./imgs/4.png" alt="photo" /></p>
+
+                <div class="choices">
+                  <button class="choice" data-answer="true">✔️</button>
+                  <button class="choice" data-answer="false">❌</button>
+                </div>
+              </div>
+              <div class="question" data-correct="false">
+                <p>5. wir <img src="./imgs/5.png" alt="photo" /></p>
+
+                <div class="choices">
+                  <button class="choice" data-answer="true">✔️</button>
+                  <button class="choice" data-answer="false">❌</button>
+                </div>
+              </div>
+              <div class="question" data-correct="false">
+                <p>6. ihr <img src="./imgs/6.png" alt="photo" /></p>
+
+                <div class="choices">
+                  <button class="choice" data-answer="true">✔️</button>
+                  <button class="choice" data-answer="false">❌</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <audio
+      id="clapSound"
+      src="../../../../sounds/clap.mp3"
+      preload="auto"></audio>
+    <audio
+      id="inCorrectSound"
+      src="../../../../sounds/incorrect.mp3"
+      preload="auto"></audio>
+
+    <footer>
+      <div class="navigation">
+        <a href="../page52/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../../imgs/previous.png" alt="Previous" />
+          </div>
+        </a>
+
+        <a href="../../../../index.html" class="home-btn">
+          <img src="../../../../imgs/home.png" width="130" alt="Home" />
+        </a>
+
+        <a href="../page53/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../../imgs/next.png" alt="next" />
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <script src="../../../../scripts/yesOrNo.js"></script>
+  </body>
+</html>

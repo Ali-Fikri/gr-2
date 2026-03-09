@@ -22,7 +22,7 @@
 }
 
 .activity {
-  width: 80%;
+  width: 100%;
 }
 
 .question {
@@ -33,6 +33,21 @@
   gap: 2rem;
   font-size: 2rem;
   margin: 2rem 0;
+  min-width: 70%;
+
+  p {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    img {
+      width: 65px;
+      height: auto;
+    }
+  }
 }
 
 .choices {
@@ -97,6 +112,10 @@
 
   .question p {
     font-size: 1.5rem;
+
+    img {
+      width: 50px;
+    }
   }
 
   .choices {
