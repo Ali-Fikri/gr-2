@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="de-DE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lektion 3</title>
+    <link rel="stylesheet" href="../../../../master.css" />
+    <link rel="stylesheet" href="../../../../styles/dialoguo.css" />
+    <style>
+      .row {
+        background: url(./imgs/background.png) no-repeat center center;
+        background-size: cover;
+        position: relative;
+
+        .absolute {
+          position: absolute;
+          width: 35%;
+          height: auto;
+          top: 75%;
+          left: 40%;
+          transform: translate(-50%, -50%);
+
+          &#img-1-3 {
+            left: 32%;
+          }
+          &#img-1-4 {
+            left: 70%;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="board">
+        <div
+          class="section-title animate-characters"
+          data-type="tts"
+          data-text="Meine Welt">
+          <h2>Meine Welt</h2>
+        </div>
+        <div
+          class="section-title"
+          data-type="tts"
+          data-text="1 Hör zu und sprich nach:">
+          <h3>Hör zu und sprich nach:</h3>
+        </div>
+
+        <div class="row">
+          <img
+            src="./imgs/1.png"
+            alt="Foreground"
+            data-type="tts"
+            data-text="Hall, wie heißt du?" />
+          <img
+            src="./imgs/2.png"
+            alt="Foreground"
+            data-type="tts"
+            data-text="Hallo, Ich heiße Lukas und du?" />
+          <img
+            src="./imgs/3.png"
+            alt="Foreground"
+            class="absolute"
+            id="img-1-3"
+            data-type="tts"
+            data-text="Ich bin Alferd Woher kommst du?" />
+          <img
+            src="./imgs/4.png"
+            alt="Foreground"
+            class="absolute"
+            id="img-1-4"
+            data-type="tts"
+            data-text="Ich komme aus Deutschland." />
+        </div>
+        <div class="row">
+          <img
+            src="./imgs/5.png"
+            alt="Foreground"
+            data-type="tts"
+            data-text="Hall, wie heißt du?" />
+          <img
+            src="./imgs/6.png"
+            alt="Foreground"
+            data-type="tts"
+            data-text="Hallo, Ich heiße Lukas und du?" />
+        </div>
+        <div class="row">
+          <img
+            src="./imgs/7.png"
+            alt="Foreground"
+            data-type="tts"
+            data-text="Hall, wie heißt du?" />
+          <img
+            src="./imgs/8.png"
+            alt="Foreground"
+            data-type="tts"
+            data-text="Hallo, Ich heiße Lukas und du?" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="navigation">
+        <a href="../page9-1/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../../imgs/previous.png" alt="Previous" />
+          </div>
+        </a>
+
+        <a href="../../../../index.html" class="home-btn">
+          <img src="../../../../imgs/home.png" width="130" alt="Home" />
+        </a>
+
+        <a href="../page11-1/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../../imgs/next.png" alt="next" />
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <script src="../../../../master.js"></script>
+  </body>
+</html>
