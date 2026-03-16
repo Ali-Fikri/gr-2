@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="de-DE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lektion 4</title>
+    <link rel="stylesheet" href="../../../../master.css" />
+    <link rel="stylesheet" href="../../../../styles/drag.css" />
+  </head>
+  <body>
+    <div class="page">
+      <section class="board">
+        <div class="content">
+          <div class="question-container">
+            <div class="section-title">
+              <h2 class="animate-characters">Ergänze:</h2>
+            </div>
+            <div class="choices" style="color: darkred">
+              (
+              <span class="choice" draggable="true" answer="Wie">Wie</span>
+              -
+              <span class="choice" draggable="true" answer="Was">Was</span> -
+              <span class="choice" draggable="true" answer="Gut">Gut</span>
+              -
+              <span class="choice" draggable="true" answer="Montag"
+                >Montag</span
+              >
+              )
+            </div>
+          </div>
+          <br />
+          <div class="answer-container">
+            <div class="question-item">
+              1.
+              <span class="dots" answer="Wie">.................</span>
+              geht es dir?
+            </div>
+            <div class="question-item">
+              2.
+              <span class="dots" answer="Was">.................</span> machst
+              du? danke.
+            </div>
+            <div class="question-item">
+              3.
+              <span class="dots" answer="Gut">.................</span> ist
+              heute?
+            </div>
+            <div class="question-item">
+              4. Heute ist
+              <span class="dots" answer="Montag">.................</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <audio
+      id="clapSound"
+      src="../../../../sounds/clap.mp3"
+      preload="auto"></audio>
+    <audio
+      id="inCorrectSound"
+      src="../../../../sounds/incorrect.mp3"
+      preload="auto"></audio>
+
+    <footer>
+      <div class="navigation">
+        <a href="../page15/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../../imgs/previous.png" alt="Previous" />
+          </div>
+        </a>
+
+        <a href="../../../../index.html" class="home-btn">
+          <img src="../../../../imgs/home.png" width="130" alt="Home" />
+        </a>
+
+        <a href="../page15-2/index.html" class="button">
+          <div class="openai-logo">
+            <img src="../../../../imgs/next.png" alt="next" />
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <script src="../../../../master.js"></script>
+    <script src="../../../../scripts/dragQuestion.js"></script>
+  </body>
+</html>
